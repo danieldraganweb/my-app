@@ -1,11 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+import Card from "./components/card.component";
 
 function App() {
   return (
     <div className="App">
-      <h1>My first react app</h1>
-      <p>Welcome!</p>
+      <Card title={"Daniel Dragan"} description={"Front-end Developer"} />
+      <Card title={"Welcome to my website!"} description={"DIVE IN!"} />
+      <Card title={"About me"} description={"I am a front-end developer"} />
+      <Card
+        title={"Contact me"}
+        description={"Email: danieldraganweb@gmail.com "}
+      />
     </div>
   );
 }

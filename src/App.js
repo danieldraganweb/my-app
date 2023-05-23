@@ -1,14 +1,37 @@
 import "./App.css";
+import Nav from "./components/Nav";
+import Header from "./components/Heading";
+import Intro1 from "./components/Intro1";
+import Intro2 from "./components/Intro2";
+import Intro3 from "./components/Intro3";
+import Footer from "./components/Footer";
+import Promo from "./components/Promo";
+import ModeToggler from "./components/ModeToggler";
 
-function Header() {
+const App = () => {
+  function handleClick() {
+    let randomNum = Math.floor(Math.random() * 3) + 1;
+    console.log(randomNum);
+    let userInput = prompt("type a number");
+    alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
+  }
+
   return (
-    <header>
-      <h1>Hai ca a luat-o!</h1>
-    </header>
+    <div>
+      <Nav />
+      <Promo />
+      <Header firstName="John" />
+      <Header firstName="Jane" />
+      <Header firstName="Joe" />
+      <Intro1 />
+      <Intro2 />
+      <Intro3 />
+      <Footer />
+      <ModeToggler />
+      <h1>Task: Add a button and handle a click event</h1>
+      <button onClick={handleClick}>Guess the number between 1 and 3</button>
+    </div>
   );
-}
-function App() {
-  return <Header />;
-}
+};
 
 export default App;

@@ -17,7 +17,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="App">
       <Nav />
       <Promo />
       <Header firstName="John" />

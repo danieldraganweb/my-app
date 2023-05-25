@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Nav from "./components/Nav";
 import Header from "./components/Heading";
 import Intro1 from "./components/Intro1";
